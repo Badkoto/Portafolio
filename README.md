@@ -1,4 +1,4 @@
-# Práctica de Consolidación Módulo 3
+# Práctica de Consolidación Módulo 9
 
 ## Profesor: Osman Pérez
 
@@ -7,7 +7,7 @@
 
 ---
 
-Este repositorio contiene la práctica de consolidación del Módulo 3 del curso. A continuación se describe la estructura del proyecto y las instrucciones para su ejecución.
+Este repositorio contiene la práctica de consolidación del Módulo 9 del curso. A continuación se describe la estructura del proyecto y las instrucciones para su ejecución.
 
 ## Estructura del Proyecto
 
@@ -18,4 +18,4 @@ Este repositorio contiene la práctica de consolidación del Módulo 3 del curso
 
 ## Descripción del Proyecto
 
-La práctica de consolidación del Módulo 3 incluye la creación de una aplicación web simple que permite a los usuarios seleccionar productos, agregarlos a un carrito de compras, y finalizar la compra mostrando el total a pagar y los detalles de la compra.
+La práctica de consolidación del Módulo 9.
