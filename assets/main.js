@@ -1,61 +1,57 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const formulario = document.getElementById("formulario");
+  const mensajeExito = document.getElementById("mensaje-exito");
 
-    $("#formulario").submit(function (evento) {
-      evento.preventDefault();
-      limpiarErrores();
-      var nombre = $("#inputNombre").val();
-      var apellido = $("#inputApellido").val();
-      var email = $("#txt-email").val();
-      var comentarios = $("#txt-comentarios").val();
-      var valido = true;
-  
-      if (nombre == "") {
-        valido = false;
-        $("#error-nombre").html("Ingrese nombre");
-        $("label[for='inputNombre']").addClass("text-danger");
-      }
-  
-      if (apellido == "") {
-        valido = false;
-        $("#error-apellido").html("Ingrese Apellido");
-        $("label[for='inputApellido']").addClass("text-danger");
-      }
-  
-      if (email == "") {
-        valido = false;
-        $("#error-email").html("Ingrese su correo electronico");
-        $("#lbl-email").addClass("text-danger");
-      }
-  
-      if (comentarios == "") {
-        valido = false;
-        $("#error-comentarios").html("Ingrese comentario");
-        $("#lbl-comentarios").addClass("text-danger");
-      }
-  
-      if (valido) {
-        $("#alert-send").removeClass("d-none");
-      }
-    });
-  
-    function limpiarErrores() {
-      $("#error-email").html("");
-      $("#error-nombre").html("");
-      $("#error-apellido").html("");
-      $("#error-comentarios").html("");
-      $("#lbl-email").removeClass("text-danger");
-      $("label[for='inputNombre']").removeClass("text-danger");
-      $("label[for='inputApellido']").removeClass("text-danger");
-      $("#lbl-comentarios").removeClass("text-danger");
+  formulario.addEventListener("submit", function (evento) {
+    evento.preventDefault(); // Previene el envío automático
+    limpiarErrores(); // Limpia mensajes previos de error
+
+    let valido = true;
+
+    // Captura de valores de los campos
+    const nombre = document.getElementById("inputNombre").value.trim();
+    const email = document.getElementById("txt-email").value.trim();
+    const comentarios = document.getElementById("txt-comentarios").value.trim();
+
+    // Validación personalizada
+    if (nombre === "") {
+      valido = false;
+      mostrarError("error-nombre", "Por favor, ingrese su nombre.");
     }
-  
-    $("#btn-limpiar").click(function () {
-      limpiarErrores();
-      $("#txt-email").val("");
-      $("#inputNombre").val("");
-      $("#inputApellido").val("");
-      $("#txt-comentarios").val("");
-      $("#alert-send").addClass("d-none");
-    });
+
+    if (email === "") {
+      valido = false;
+      mostrarError("error-email", "Por favor, ingrese su correo electrónico.");
+    } else if (!/^\S+@\S+\.\S+$/.test(email)) {
+      valido = false;
+      mostrarError("error-email", "El correo electrónico no es válido.");
+    }
+
+    if (comentarios === "") {
+      valido = false;
+      mostrarError("error-comentarios", "Por favor, ingrese su comentario.");
+    }
+
+    // Si es válido, mostrar mensaje de éxito
+    if (valido) {
+      formulario.reset(); // Limpia el formulario
+      mensajeExito.classList.remove("d-none"); // Muestra el mensaje de éxito
+      setTimeout(() => {
+        mensajeExito.classList.add("d-none"); // Oculta el mensaje después de 5 segundos
+      }, 5000);
+    }
   });
-  
+
+  // Función para mostrar mensajes de error en HTML
+  function mostrarError(id, mensaje) {
+    const elementoError = document.getElementById(id);
+    elementoError.textContent = mensaje; // Establece el mensaje
+  }
+
+  // Función para limpiar los mensajes de error
+  function limpiarErrores() {
+    mostrarError("error-nombre", "");
+    mostrarError("error-email", "");
+    mostrarError("error-comentarios", "");
+  }
+});
