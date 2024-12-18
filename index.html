@@ -215,7 +215,10 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <img src="./assets/img/proyecto-1.png" class="img-fluid mb-3" alt="Proyecto 1">
+                <video controls width="100%" poster="ruta-del-poster.jpg">
+                    <source src="./assets/video/proyecto-1.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                  </video>
                 <div class="modal-text p-2">
                     <p>
                         Este proyecto es una aplicación web desarrollada con Vue.js que permite gestionar un inventario de productos y una funcionalidad de carrito de compras. Además, cuenta con autenticación de usuarios mediante Firebase y almacenamiento de datos en tiempo real con Firebase Realtime Database.
@@ -405,6 +408,15 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
         <script src="./assets/main.js"></script>
+        <script>
+            document.getElementById('modalProyecto1').addEventListener('hidden.bs.modal', function () {
+                const video = document.querySelector('#modalProyecto1 video');
+                if (video) {
+                    video.pause(); // Pausar el video
+                    video.currentTime = 0; // Opcional: Reinicia el video al inicio
+                }
+            });
+        </script>
 </body>
 
 </html>
