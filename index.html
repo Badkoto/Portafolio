@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <!-----BOOTSTRAP----->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-----GOOGLE FONTS----->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-----ESTILOS PERSONALIZADOS----->
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+
+    <!-----MENÚ----->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent ">
+        <div class="container">
+            <!----- ICONO ESCRITORIO DERECHA ----->
+            <a class="nav-link d-lg-none" href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" stroke="#ffffff" stroke-width="2" fill="none" />
+                    <path d="M8 16L8 8L12 12L16 8L16 16" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </a>
+            <button class="navbar-toggler navbar-toogle_custom" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 6h18M3 12h18M3 18h18" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-3 p-lg-0">
+                    <li class="nav-item pe-3">
+                        <a class="nav-link active" aria-current="page" href="#introduccion">Yo 😉</a>
+                    </li>
+                    <li class="nav-item pe-3">
+                        <a class="nav-link" href="#proyectos">Trabajos</a>
+                    </li>
+                    <li class="nav-item pe-3">
+                        <a class="nav-link" href="#contacto">Hablemos!</a>
+                    </li>
+                </ul>
+            </div>
+            <!----- ICONO MOBILE IZQUIERDA  ----->
+            <a class="nav-link ms-auto d-none d-lg-block" href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" stroke="#ffffff" stroke-width="2" fill="none" />
+                    <path d="M8 16L8 8L12 12L16 8L16 16" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <!-----PRESENTACION----->
+    <section id="introduccion" class="py-5">
+        <div class="container py-2">
+            <div class="row p-4 p-lg-2">
+                <div class="col-12 col-lg-12">
+                    <h2>Hola soy <span class="subyarado">Marco Espinosa</span>👋</h2>
+                    <h6 class="mb-3">UI-DEV-SCRUM</h6>
+                    <p>Soy diseñador por vocación y mi pasión por el aprendizaje me ha llevado a especializarme en
+                        Diseño
+                        UX/UI y Desarrollo Web. En la actualidad, ejerzo como Scrum Master, donde aplico mis habilidades
+                        para liderar equipos y optimizar procesos.</p>
+                </div>
+           </div>
+        </div>
+    </section>
+
+    <!-----HABILIDADES----->
+    <section id="habilidades" class="py-5">
+        <div class="container py-2">
+            <div class="row p-4 p-lg-2 mb-5">
+                <div class="col-12">
+                    <h4>Mis Habilidades 💪</h4>
+                    <p>A lo largo de mi carrera, he desarrollado un conjunto variado de habilidades en diseño y
+                        desarrollo.</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Habilidad 1 -->
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="p-4 card-habilidades">
+                        <h5>Diseño UX/UI</h5>
+                        <p>Experiencia en crear interfaces intuitivas y agradables para el usuario.</p>
+                        <div class="col-12 text-center">
+                            <img src="./assets/img/pencil.svg" class="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidad 2 -->
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="p-4 card-habilidades">
+                        <h5>Desarrollo Web</h5>
+                        <p>Habilidad en HTML, CSS, JavaScript y frameworks modernos.</p>
+                        <div class="col-12 text-center">
+                            <img src="./assets/img/html.svg" class="" alt="">
+                            <img src="./assets/img/css.svg" class="" alt="">
+                            <img src="./assets/img/js.svg" class="" alt="">                                                   
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidad 3 -->
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="p-4 card-habilidades">
+                        <h5>Scrum Master</h5>
+                        <p>Capacidad para liderar equipos y optimizar procesos de desarrollo ágil.</p>
+                        <div class="col-12 text-center">
+                            <img src="./assets/img/scrum.svg" class="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----HERRAMIENTAS----->
+    <section id="herramientas" class="py-5">
+        <div class="container py-2">
+            <div class="row p-4 p-lg-2 mb-5">
+                <div class="col-12">
+                    <h4>Herramientas 🔨</h4>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Habilidad 1 -->
+                <div class="col-12 col-md-12 mb-3">
+                    <div class="p-4">
+                        <ul class="list-group list-group-horizontal list-herramientas">
+                            <li>
+                                <img src="./assets/img/visual.svg" class="" alt="">
+                            </li>
+                            <li>
+                                <img src="./assets/img/visual-code.svg" class="" alt="">
+                            </li>
+                            <li>
+                                <img src="./assets/img/sql-database.svg" class="" alt="">
+                            </li>
+                            <li>
+                                <img src="./assets/img/github.svg" class="" alt="">
+                            </li>
+                            <li>
+                                <img src="./assets/img/sourcetree.svg" class="" alt="">
+                            </li>
+                            <li>
+                                <img src="./assets/img/adobe-photoshop.svg" class="" alt="">
+                            </li>
+                            <li>
+                                <img src="./assets/img/illustrator.svg" class="" alt="">
+                            </li>
+                            <li>
+                                <img src="./assets/img/adobe-xd.svg" class="" alt="">
+                            </li>
+                            <li>
+                                <img src="./assets/img/postman.svg" class="" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----PROYECTOS----->
+    <!-- Galería de Proyectos -->
+<section id="proyectos" class="py-5">
+    <div class="container py-2">
+        <div class="row p-4 p-lg-2 mb-5">
+            <div class="col-12">
+                <h4>Galería de proyectos 🖥️</h4>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Proyecto 1 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="galeria-item" data-bs-toggle="modal" data-bs-target="#modalProyecto1">
+                    <img src="./assets/img/proyecto-1.png" alt="Imagen 1" class="img-fluid">
+                </div>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="galeria-item" data-bs-toggle="modal" data-bs-target="#modalProyecto2">
+                    <img src="./assets/img/proyecto-2.png" alt="Imagen 2" class="img-fluid">
+                </div>
+            </div>
+              <!-- Proyecto 3 -->
+              <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="galeria-item" data-bs-toggle="modal" data-bs-target="#modalProyecto3">
+                    <img src="./assets/img/proyecto-2.png" alt="Imagen 3" class="img-fluid">
+                </div>
+            </div>
+            <!-- Repite para más proyectos -->
+        </div>
+    </div>
+</section>
+
+<!-- Modal Proyecto 1 -->
+<div class="modal fade" id="modalProyecto1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel1">Sistema de Gestión de Productos y Carrito de Compras</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/img/proyecto-1.png" class="img-fluid mb-3" alt="Proyecto 1">
+                <div class="modal-text p-2">
+                    <p>
+                        Este proyecto es una aplicación web desarrollada con Vue.js que permite gestionar un inventario de productos y una funcionalidad de carrito de compras. Además, cuenta con autenticación de usuarios mediante Firebase y almacenamiento de datos en tiempo real con Firebase Realtime Database.
+                    </p>
+                    <p>
+                        Características Principales:<br><br>
+
+                        Autenticación de Usuarios:<br>
+                        Implementada mediante Firebase Authentication.<br>
+                        Registro e inicio de sesión con validación de accesos a rutas protegidas.<br><br>
+
+                        Gestión de Productos:<br>
+                        Visualización de productos disponibles en un listado interactivo.<br>
+                        Sección de detalles para cada producto con información ampliada.<br>
+                        Panel de inventario con opciones de agregar, actualizar y eliminar productos.<br><br>
+
+                        Carrito de Compras:<br>
+                        Funcionalidad de agregar productos al carrito con manejo de cantidades.<br>
+                        Almacenamiento en el estado global utilizando Vuex.<br>
+                        Visualización del carrito en la sección correspondiente con opción para vaciarlo.<br><br>
+
+                        Subida de Productos:<br>
+                        Sección para subir productos al inventario con formularios interactivos.<br>
+                        Uso de Firebase Realtime Database como almacenamiento.<br><br>
+
+                        Navegación Moderna:<br>
+                        Implementada mediante Vue Router con soporte de navegación protegida para rutas que requieren autenticación.<br><br>
+
+                        Interfaz de Usuario:<br>
+                        Diseñada con Vuetify para proporcionar una experiencia visual atractiva y responsiva.<br>
+                    </p>
+                    <p> Tecnologías utilizadas:</p>
+                    <ul>
+                        <li>Vue.js: Framework principal para el frontend.</li>
+                        <li>Vuetify: Librería UI para componentes visuales.</li>
+                        <li>Firebase: Autenticación y base de datos en tiempo real.</li>
+                        <li>Vuex: Almacenamiento global del carrito de compras.</li>
+                        <li>Vue Router: Gestión de rutas dinámicas y protegidas.</li>
+                     </ul>
+                    <p>
+                        Resultados <br>
+                        La aplicación ofrece una experiencia fluida e interactiva para la gestión y visualización de productos, combinando una interfaz amigable con funcionalidades completas de carrito de compras y autenticación segura.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Proyecto 2 -->
+<div class="modal fade" id="modalProyecto2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel2">Aplicación RESTful para la Gestión de Usuarios y Bootcamps</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/img/proyecto-2.png" class="img-fluid mb-3" alt="Proyecto 2">
+                <div class="modal-text p-2">
+                    <p>
+                        Este proyecto es una aplicación backend desarrollada con Node.js, Sequelize y PostgreSQL. Su principal objetivo es proporcionar una API RESTful para gestionar usuarios y bootcamps, con operaciones CRUD y consultas avanzadas.
+                    </p>
+                    <p>
+                        Características Principales:<br><br>
+                        
+                        Gestión de Usuarios:<br>
+                        Creación, consulta, actualización y eliminación (CRUD).<br>
+                        Consultas detalladas por ID, incluyendo los bootcamps asociados.<br><br>
+
+                        Gestión de Bootcamps:<br>
+                        Creación y consulta de bootcamps.<br>
+                        Relación entre usuarios y bootcamps.<br><br>    
+                        
+                        Consultas Avanzadas:
+                        Listado de todos los bootcamps junto con sus usuarios.<br>
+                        Listado de todos los usuarios y sus bootcamps asignados.<br>
+                        Consulta de un bootcamp específico con sus usuarios relacionados.<br>    
+                    </p>
+                    <p> Tecnologías utilizadas:</p>
+                    <ul>
+                        <li>Node.js y Express para el servidor backend.</li>
+                        <li>Sequelize: ORM para la gestión de la base de datos.</li>
+                        <li>PostgreSQL como base de datos relacional.</li>
+                    </ul>
+                    <p>
+                        Resultados <br>
+                        El proyecto proporciona una API eficiente y modular, facilitando la gestión de usuarios y bootcamps a través de operaciones CRUD completas y consultas avanzadas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Proyecto 3 -->
+<div class="modal fade" id="modalProyecto3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel3">Aplicación para la Gestión de Usuarios y Bootcamps</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/img/proyecto-3.png" class="img-fluid mb-3" alt="Proyecto 1">
+                <div class="modal-text p-2">
+                    <p>
+                        Esta aplicación fue desarrollada como parte del Módulo 7 del curso de Desarrollo Web y permite realizar operaciones completas de gestión de usuarios y bootcamps.
+                    </p>
+                    <p>
+                        Características Principales:<br><br>
+                        Gestión de Usuarios y Bootcamps:<br>
+                        CRUD completo (Crear, Leer, Actualizar, Eliminar) para usuarios y bootcamps.<br>
+                        Consultar usuarios y bootcamps por ID.<br> 
+                        Relacionar usuarios con bootcamps.<br><br>
+
+                        Consultas Avanzadas:<br>
+                        Listar todos los bootcamps con sus usuarios asociados.<br>
+                        Consultar un usuario específico mostrando los bootcamps asignados.<br>
+                        Obtener un bootcamp y sus usuarios relacionados.<br><br>
+                    </p>
+                    <p> Tecnologías utilizadas:</p>
+                    <ul>
+                        <li>Node.js y Express para el servidor backend.</li>
+                        <li>PostgreSQL como base de datos relacional.</li>
+                        <li>Instalación de dependencias mediante npm o yarn.</li>
+                     </ul>
+                    <p>
+                        Resultados <br>
+                        La aplicación proporciona una solución eficiente y organizada para la gestión de usuarios y bootcamps con consultas optimizadas y relaciones bien definidas entre las entidades.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-----CONTACTO----->
+    <section id="contacto" class="py-5">
+        <div class="container py-2">
+            <div class="row p-4 p-lg-2 mb-5">
+                <div class="col-12">
+                    <h4>Contáctame 📧</h4>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Habilidad 1 -->
+                <div class="col-12 col-md-6 mb-3 d-flex align-items-center pt-4 frase-form order-md-2 px-md-5">
+                    <div>
+                        <h4 class="mb-3 bold-text">Hablemos de tus ideas y proyectos</h4>
+                        <p>Si tienes alguna pregunta, propuesta de proyecto, o deseas conectar para discutir sobre tecnología y desarrollo de software, no dudes en contactarme. 
+                            Completa el formulario y te responderé pronto. ¡Espero saber de ti! 😁</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                    <div class="p-4">
+                        <!-- Formulario sin validación de expresión regular -->
+                        <form id="formulario" name="contacto" method="POST" data-netlify="true">
+                            <div class="mb-3">
+                                <label for="inputNombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="inputNombre" name="nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputApellido" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="inputApellido" name="apellido" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="txt-email" class="form-label">Correo Electrónico</label>
+                                <input type="email" id="txt-email" class="form-control" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="txt-comentarios" class="form-label">Comentario</label>
+                                <textarea class="form-control" id="txt-comentarios" rows="3" name="comentarios" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-enviar btn-primary">Enviar</button>
+                        </form>                         
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="./assets/main.js"></script>
+</body>
+
+</html>
